@@ -2,6 +2,7 @@
   "name": "dailyanime",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://rexlmanu.github.io/dailyanime",
   "dependencies": {
     "@craco/craco": "^6.3.0",
     "@testing-library/jest-dom": "^5.11.4",
@@ -17,7 +18,9 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -39,6 +42,7 @@
   },
   "devDependencies": {
     "autoprefixer": "9",
+    "gh-pages": "^3.2.3",
     "postcss": "7",
     "tailwind-scrollbar": "^1.3.1",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat"
